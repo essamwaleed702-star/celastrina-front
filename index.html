@@ -258,6 +258,90 @@
         .toast.error { border-left: 5px solid var(--danger-red); }
         @keyframes slideIn { from { transform: translateX(-100%); opacity: 0; } to { transform: translateX(0); opacity: 1; } }
         @keyframes fadeOut { to { opacity: 0; transform: translateX(-10px); } }
+
+        /* ================= Mobile Responsive ================= */
+        @media (max-width: 600px) {
+            /* Announcement Bar */
+            .announcement-bar { font-size: 0.72em; padding: 8px 10px; letter-spacing: 0.5px; }
+
+            /* Header */
+            header { padding: 12px 15px; }
+            .logo-text { font-size: 1.3em; }
+            .main-nav { gap: 15px; margin-top: 10px; padding-top: 10px; }
+            .nav-link { font-size: 0.9em; }
+
+            /* Hero */
+            .hero { height: 55vh; }
+            .hero h1 { font-size: 2.2em; }
+            .hero p { font-size: 0.95em; letter-spacing: 1px; }
+            .hero-content .btn { padding: 12px 25px; font-size: 0.9em; }
+
+            /* Section Titles */
+            .section-title { font-size: 1.7em; margin-bottom: 25px; }
+
+            /* Container */
+            .container { padding: 40px 15px; }
+
+            /* Product Grid — 2 columns on mobile */
+            .product-grid { grid-template-columns: repeat(2, 1fr); gap: 20px 12px; }
+            .product-info h3 { font-size: 0.95em; }
+            .product-info p { font-size: 0.95em; }
+
+            /* Story Section */
+            .story-section { padding: 30px 20px; gap: 25px; margin-top: 20px; }
+            .story-image { min-width: 100%; }
+            .story-content { min-width: 100%; }
+            .story-content h2 { font-size: 1.8em; }
+            .story-content p { font-size: 0.95em; }
+
+            /* Reviews */
+            .review-card { width: 100%; max-width: 100%; }
+            .reviews-grid { flex-direction: column; align-items: center; }
+            .reviews-section { padding: 40px 15px; }
+
+            /* Unboxing */
+            .unboxing-grid { flex-direction: column; align-items: center; }
+            .unboxing-feature { max-width: 100%; }
+
+            /* VIP Club */
+            .vip-club { padding: 40px 15px; }
+            .vip-club h2 { font-size: 1.8em; }
+            .vip-form input { min-width: 100%; }
+            .vip-form { gap: 12px; }
+
+            /* Product Detail */
+            .product-detail-layout { padding: 20px 15px; gap: 25px; }
+            .pd-gallery { min-width: 100%; }
+            .pd-info { min-width: 100%; }
+            .pd-info h1 { font-size: 1.8em; }
+            .pd-price { font-size: 1.5em; }
+            .gallery-thumbnails img { width: 55px; height: 55px; }
+
+            /* Cart Drawer */
+            .cart-drawer { width: 100%; right: -100%; }
+
+            /* Checkout */
+            .checkout-form, .order-summary { padding: 25px 15px; min-width: 100%; }
+            .checkout-container { gap: 20px; }
+
+            /* Toast */
+            #toast-container { left: 10px; right: 10px; bottom: 80px; }
+            .toast { font-size: 0.9em; padding: 12px 15px; }
+
+            /* Floating WhatsApp */
+            .floating-whatsapp { bottom: 20px; right: 15px; width: 52px; height: 52px; }
+            .floating-whatsapp svg { width: 28px; height: 28px; }
+
+            /* Footer */
+            footer { padding: 25px 15px; }
+
+            /* Filters */
+            .filters { gap: 8px; }
+            .filter-btn { padding: 8px 15px; font-size: 0.85em; }
+
+            /* Search */
+            .search-container { margin-bottom: 20px; }
+        }
     </style>
 </head>
 <body>
