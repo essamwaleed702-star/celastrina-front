@@ -917,10 +917,10 @@
 
             message +=` \n*Total à payer:* ${total.toFixed(2)} TND\n*Paiement:* À la livraison\n\nMerci de confirmer ma commande !`;
     
-            const encodedMessage = encodeURIComponent(message);
+            //const encodedMessage = encodeURIComponent(message);
             const whatsappNumber = siteSettings.whatsapp || "21626891298";
             //const whatsappURL = `https://wa.me/${whatsappNumber}?text=${encodedMessage}`;
-            const whatsappURL = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodedMessage}`;
+            const whatsappURL = `https://api.whatsapp.com/send?phone=${whatsappNumber}&text=${encodeURIComponent(message)}`;
     
             window.location.href = whatsappURL ;
 
